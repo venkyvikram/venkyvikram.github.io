@@ -1,84 +1,77 @@
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #0d1117, #05080f);
-    color: #c9d1d9;
-    line-height: 1.7;
-    scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Research | Venkatramanan Vijayan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
 
-/* Subtle grid background */
-body::before {
-    content: "";
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-image: 
-        linear-gradient(rgba(88,166,255,0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(88,166,255,0.05) 1px, transparent 1px);
-    background-size: 60px 60px;
-    z-index: -1;
-}
+<header>
+    <h1>Research & Innovation</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="patents.html">Intellectual Capital</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-header {
-    background: #161b22;
-    padding: 2rem;
-    border-bottom: 2px solid #1f6feb;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
+<section>
 
-h1, h2, h3 {
-    color: #58a6ff;
-}
+<div class="card">
+    <h2>Doctoral Research (VTU)</h2>
+    <h3>Cryptographic Provenance & End-to-End Software Integrity Verification</h3>
 
-nav a {
-    margin-right: 20px;
-    color: #c9d1d9;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s ease;
-}
+    <p>
+        My doctoral research focuses on designing a decentralized,
+        cryptographically continuous trust framework across build,
+        distribution, and runtime stages of software systems.
+    </p>
 
-nav a:hover {
-    color: #58a6ff;
-    text-shadow: 0 0 8px #1f6feb;
-}
+    <p>
+        The work aims to eliminate integrity gaps in software supply chains
+        by integrating decentralized signing models, Zero-Knowledge Proofs,
+        and Post-Quantum cryptographic resilience.
+    </p>
 
-section {
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 1100px;
-}
+    <div class="badge">Zero-Knowledge Proofs</div>
+    <div class="badge">Post-Quantum Cryptography</div>
+    <div class="badge">Decentralized Identity</div>
+    <div class="badge">Software Supply Chain</div>
+</div>
 
-.card {
-    background: #161b22;
-    padding: 1.8rem;
-    border-radius: 12px;
-    margin-bottom: 1.5rem;
-    border: 1px solid #30363d;
-    transition: 0.3s ease;
-}
+<div class="card">
+    <h2>Journal Publication (2025)</h2>
+    <p>
+        Enhanced Digital Forensic Security Framework Using Multikey Encryption
+        and OTP-Based Authentication.
+    </p>
 
-.card:hover {
-    transform: translateY(-6px);
-    border-color: #1f6feb;
-    box-shadow: 0 0 25px rgba(31,111,235,0.25);
-}
+    <a href="https://ajaccm.com/journal/index.php/ajaccm/article/view/107/107" target="_blank">
+        View Publication
+    </a>
+</div>
 
-.badge {
-    display: inline-block;
-    background: #1f6feb;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    margin: 5px 5px 5px 0;
-}
+<div class="card">
+    <h2>Defensive Publication</h2>
+    <p>
+        Secure dependency validation & software integrity enhancement model.
+    </p>
 
-footer {
-    text-align: center;
-    padding: 2rem;
-    border-top: 1px solid #30363d;
-    color: #8b949e;
-}
+    <a href="https://priorart.ip.com/IPCOM/00275635D" target="_blank">
+        View IPCOM Publication
+    </a>
+</div>
+
+</section>
+
+<footer>
+    Advancing Cryptographic Trust in Modern Cloud Systems.
+</footer>
+
+</body>
+</html>

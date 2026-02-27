@@ -1,3 +1,4 @@
+/* Global */
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -7,17 +8,17 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Soft animated background glow */
+/* Soft floating glow */
 body::before {
     content: "";
     position: fixed;
     width: 600px;
     height: 600px;
     background: radial-gradient(circle, rgba(56,189,248,0.25), transparent 70%);
-    top: -200px;
-    right: -200px;
+    top: -150px;
+    right: -150px;
     z-index: -1;
-    animation: floatGlow 12s ease-in-out infinite alternate;
+    animation: floatGlow 10s ease-in-out infinite alternate;
 }
 
 @keyframes floatGlow {
@@ -25,9 +26,10 @@ body::before {
     to { transform: translateY(40px); }
 }
 
+/* Header */
 header {
-    background: rgba(15, 23, 42, 0.9);
-    backdrop-filter: blur(10px);
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(12px);
     padding: 2rem;
     border-bottom: 2px solid #38bdf8;
     position: sticky;
@@ -35,6 +37,7 @@ header {
     z-index: 1000;
 }
 
+/* Headings */
 h1 {
     margin: 0;
     font-size: 2.2rem;
@@ -45,6 +48,11 @@ h2 {
     color: #93c5fd;
 }
 
+h3 {
+    color: #60a5fa;
+}
+
+/* Navigation */
 nav {
     margin-top: 1rem;
 }
@@ -59,29 +67,34 @@ nav a {
 
 nav a:hover {
     color: #38bdf8;
+    text-shadow: 0 0 10px rgba(56,189,248,0.6);
 }
 
+/* Layout */
 section {
     padding: 2rem;
     margin: 2rem auto;
     max-width: 1100px;
 }
 
+/* Cards */
 .card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.06);
     padding: 2rem;
     border-radius: 16px;
     margin-bottom: 2rem;
     border: 1px solid rgba(255,255,255,0.1);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
     transition: 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(56,189,248,0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(56,189,248,0.25);
+    border-color: #38bdf8;
 }
 
+/* Badges (Certifications) */
 .badge {
     display: inline-block;
     background: linear-gradient(90deg, #2563eb, #38bdf8);
@@ -90,12 +103,19 @@ section {
     font-size: 0.85rem;
     margin: 6px 6px 6px 0;
     font-weight: 500;
+    transition: 0.3s ease;
 }
 
+.badge:hover {
+    transform: scale(1.05);
+}
+
+/* Lists */
 ul {
     padding-left: 1.2rem;
 }
 
+/* Links */
 a {
     color: #38bdf8;
     text-decoration: none;
@@ -105,6 +125,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 2rem;
